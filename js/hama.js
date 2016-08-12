@@ -33,4 +33,3 @@ function hama() {
 	var wrr = hama.quote[n+=1];
 	document.getElementById('Stage_wrr').innerHTML=wrr;
 }
-setInterval(hama(), 1926);
