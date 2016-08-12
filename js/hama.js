@@ -25,11 +25,12 @@ hama.quote = [
 "很惭愧，就捕了一点微小的苍蝇。"
 ];
 /****************************/
-var n = Math.round(Math.random() *hama.quote.length-1);
 function hama() {
+	var n = Math.round(Math.random() *hama.quote.length-1);
 	if(n == hama.quote.length-1) {
 		n = -1;
 	}
 	var wrr = hama.quote[n+=1];
 	document.getElementById('Stage_wrr').innerHTML=wrr;
 }
+setInterval(hama(), 1926);
